@@ -1,0 +1,17 @@
+#! /usr/bin/env python
+# encoding: utf-8
+
+# Programa que demani el nom de l’usuari, l’edat i l’any actual. El programa escriurà l’edat que tenia l’usuari a cada any des del seu naixement i s’acomiadarà.
+
+nom=str(raw_input("Introdueix el teu nom: "))
+edat=int(raw_input("Introdueix la teva edat: "))
+anyy=int(raw_input("Introdueix l'any actual: "))
+i=0
+anyn=anyy-edat
+
+
+for i in range(1,nombre,1):
+
+
+	print "El factorial es: ", i
+
