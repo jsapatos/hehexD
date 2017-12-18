@@ -1,0 +1,29 @@
+#! /usr/bin/env python
+# encoding: utf-8
+
+#Programa per repetir el nom depenguent de quants cops volguem
+
+#definim les variables		
+nombre=0
+i=0
+continuar=""
+nom=""
+
+
+
+if (nom!="fi"): #això passa i qualsevol nom que introduïm sigui different que "fi"
+	while nom!="fi": 
+		
+		nom = str(raw_input("Introdueix el teu nom: "))
+		if nom=="fi": #aquí tanquem el programa si el nom es "fi"
+			break
+		nombre = int(raw_input("Introdueix el teu numero: ")) #introduim el numero de cops que volem que es repetesqui
+		
+		while nombre<=0: #corregim errors, si es menor que 0 no dona cap resultat i torna a demanar
+			print"Numero ha d'esser positiu"
+			nombre = int(raw_input("Introdueix el teu numero: "))
+	
+		
+		if nom!="fi": #i el for que ens dona el resultat
+			for i in range(0,nombre,1):
+				print(nom+" ");

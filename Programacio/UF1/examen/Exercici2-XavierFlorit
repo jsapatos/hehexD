@@ -1,0 +1,26 @@
+#! /usr/bin/env python
+# encoding: utf-8
+
+		
+nombre=0
+i=0
+continuar=""
+nom=""
+
+if (nom!="fi"):
+	while nom!="fi":
+		
+		nom = str(raw_input("Introdueix el teu nom: "))
+		if nom=="fi":
+			break
+		nombre = int(raw_input("Introdueix el teu numero: "))
+		
+		while nombre<=0:
+			print"Numero ha d'esser positiu"
+			nombre = int(raw_input("Introdueix el teu numero: "))
+	
+		
+		if nom!="fi":
+			for i in range(0,nombre,1):
+				print(nom+" ");
+
